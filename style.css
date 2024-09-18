@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFD942;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0; /* Remove margem padrão do body */
+}
+
+.countdown {
+    margin-bottom: 5%; /* Ajusta a margem para melhor espaçamento em telas pequenas */
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+
+.time {
+    font-size: 6vw; /* Tamanho de fonte responsivo */
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column; /* Alinha os números e rótulos em coluna */
+    align-items: center; /* Centraliza os rótulos abaixo dos números */
+}
+
+.time-label {
+    font-size: 2vw; /* Tamanho de fonte responsivo para rótulos */
+    margin-top: 5px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3vw; /* Tamanho de fonte responsivo para o título */
+    margin-bottom: 20px; /* Margem inferior para espaçamento */
+}
+
+/* Media queries para ajustes em tamanhos específicos */
+@media (max-width: 600px) {
+    .time {
+        font-size: 8vw; /* Aumenta o tamanho da fonte em telas menores */
+    }
+
+    .time-label {
+        font-size: 3vw; /* Aumenta o tamanho dos rótulos em telas menores */
+    }
+
+    h1 {
+        font-size: 5vw; /* Aumenta o tamanho do título em telas menores */
+    }
+}
